@@ -70,8 +70,10 @@ If the model is open source, we can **host it locally** — but this requires:
 
 - Enough RAM / GPU
 - Model being open source
+<img src="images/cnt_llm_local.png" alt="LLM on premise" width="500">
 
 Otherwise, we rely on **cloud-based usage**.
+<img src="images/cnt_llm_cloud.png" alt="LLM Cloud Diagram" width="500">
 
 ---
 
