@@ -1,6 +1,6 @@
 ## LLM — Large Language Model
 
-The reason behind the recent major breakthrough of the term **AI** comes mainly from advancements in **LLMs**. We will dive deep and completely understand and build our own LLM in the future in a separate branch. But for now, our main focus is on **how to use LLMs**.
+The reason behind the recent major breakthrough of the term **AI** is **LLMs** ..... We will dive deep and completely understand and build our own LLM in the future in a separate branch. But for now, our main focus is on **how to use LLMs**.
 
 ---
 
@@ -40,7 +40,7 @@ Examples:
 
 Training requires massive computational resources. Only major companies or well-funded teams can build very large models. Smaller models exist (e.g., 300M parameter models), but they are far less capable. Larger models like **DeepSeek R1 with 671B parameters** require infrastructure similar to supercomputers.
 
-What makes an LLM *good* is not only the number of parameters but also the **training process**, which differs across providers.
+What makes an LLM *good* is not only the number of parameters but also the **training process**, which differs across providers.More parameters give potential — but good training unlocks intelligence.
 
 ---
 
