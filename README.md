@@ -1,209 +1,87 @@
-# Connecting With Large Language Models (LLMs)
+## LLM — Large Language Model
 
-Large Language Models (LLMs) such as GPT, Qwen, Llama, and Mistral can be accessed through APIs, self-hosted servers, or cloud providers.  
-This guide explains the common methods, how they work, and how to get started.
-
----
-
-## 🧠 What Is an LLM?
-
-A Large Language Model (LLM) is an AI system trained to understand and generate human language.
-
-LLMs can perform tasks such as:
-
-- answering questions  
-- writing code  
-- summarizing text  
-- translating languages  
-- generating content  
-- creating chatbots  
-
-Connecting to an LLM usually involves sending input text and receiving generated output through an API.
+The reason behind the recent major breakthrough of the term **AI** comes mainly from advancements in **LLMs**. We will dive deep and completely understand and build our own LLM in the future in a separate branch. But for now, our main focus is on **how to use LLMs**.
 
 ---
 
-# 🔌 Ways to Connect to an LLM
+### Why LLM?
 
-## 1. Cloud Providers (Hosted LLMs)
+LLM is powerful, right?  
+So should we **build it** or **use it**?
 
-These platforms host LLMs and let you call them via an API:
-
-- OpenAI  
-- Anthropic  
-- Google Gemini  
-- Alibaba Qwen  
-- Mistral  
-- Meta Llama (via providers like Together, Fireworks, Groq)  
-- HuggingFace Inference API  
-
-Typically, they require:
-
-- an API key  
-- the provider’s base URL  
-- the model name  
-
-### Example (OpenAI-compatible)
-
-```python
-from openai import OpenAI
-
-client = OpenAI(api_key="YOUR_API_KEY")
-
-response = client.chat.completions.create(
-    model="gpt-4.1",
-    messages=[{"role": "user", "content": "Hello!"}]
-)
-
-print(response.choices[0].message["content"])
-```
+For me, it’s both. First, we will **use them**, explore their capabilities, and gain hands-on experience with the “monster” we’re dealing with. Later, we will dive into the **core theories behind LLMs** and try building one from scratch.
 
 ---
 
-## 2. Self-Hosted LLM Servers
+### Since we are not building one now — how do we use an LLM?
 
-You can run your own models locally or on a server using tools such as:
+That’s where **LLM providers** come into play.
 
-- **Ollama**  
-- **LM Studio**  
-- **vLLM**  
-- **Text Generation WebUI**  
-- **OpenAI-compatible gateways**  
+LLM providers are companies, organizations, or projects that develop, train, host, or serve large language models.
 
-Self-hosting allows:
-
-- lower cost  
-- privacy  
-- complete control  
-- support for custom models  
-
-### Example (local OpenAI-compatible server)
-
-```python
-from openai import OpenAI
-
-client = OpenAI(
-    base_url="http://localhost:8000/v1",
-    api_key="none"
-)
-
-response = client.chat.completions.create(
-    model="qwen2.5-coder",
-    messages=[{"role": "user", "content": "Write a Python function."}]
-)
-
-print(response.choices[0].message["content"])
-```
-
----
-
-## 3. Browser-Based or Embedded LLMs
-
-Lightweight models can run directly in the browser with:
-
-- WebGPU  
-- Transformers.js  
-- WebLLM  
-
-These require no server and run fully client-side.
-
----
-
-# 🧱 Anatomy of a Typical LLM Request
-
-Although implementations differ, most LLM APIs follow a similar structure.
-
-### **Endpoint URL**
 Examples:
-- `https://api.openai.com/v1/chat/completions`
-- `http://localhost:8000/v1/chat/completions`
 
-### **Model Name**
-Examples:
-- `"gpt-4.1"`
-- `"qwen2.5:7b"`
-- `"llama-3-8b"`
+- **OpenAI** — GPT-5, o1, Codex, Whisper  
+- **Anthropic** — Claude 3 (Opus, Sonnet, Haiku)  
+- **Google DeepMind** — Gemini  
+- **Meta** — Llama  
+- **Microsoft** — Phi  
+- **xAI** — Grok  
+- **Mistral AI**  
+- **MiniMax (China)** — MiniMax-M2 (GGUF community ports)  
+- **DeepSeek**  
+- **Hugging Face**
 
-### **Messages Array**
-A chat-style conversation:
-
-```json
-[
-  { "role": "user", "content": "Hello!" },
-  { "role": "assistant", "content": "Hi there!" }
-]
-```
-
-### **API Key**
-Some servers require keys, some don't (e.g., local servers).
+…and many more.
 
 ---
 
-# 🧩 Generic JSON Body
+### Why can't everyone build one?
 
-```json
-{
-  "model": "your-model-name",
-  "messages": [
-    { "role": "user", "content": "Say hi!" }
-  ]
-}
-```
+Training requires massive computational resources. Only major companies or well-funded teams can build very large models. Smaller models exist (e.g., 300M parameter models), but they are far less capable. Larger models like **DeepSeek R1 with 671B parameters** require infrastructure similar to supercomputers.
+
+What makes an LLM *good* is not only the number of parameters but also the **training process**, which differs across providers.
 
 ---
 
-# 🌐 Example cURL Request
+### Types of LLM Providers
 
-```bash
-curl -X POST http://localhost:8000/v1/chat/completions \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer none" \
-  -d '{
-        "model": "qwen3",
-        "messages": [{"role": "user", "content": "Hello!"}]
-      }'
-```
+We can categorize them into two groups:
 
----
+#### ✔ Open-Source
+They provide:
 
-# 🔒 Security Tips
+- Model weights  
+- Training details  
+- Licensing for modification or hosting  
 
-- Never expose API keys in frontend code  
-- Use environment variables for secrets  
-- Use HTTPS for public APIs  
-- Validate user input  
-- Use rate limiting for self-hosted deployments  
+Examples: Llama, DeepSeek, some Mistral models
+
+#### ✔ Proprietary (Closed Source)
+They do **not** share their training process or raw model files. You can only **use** them through APIs.
+
+Examples: OpenAI ChatGPT models, Anthropic’s Claude
 
 ---
 
-# 🚀 Tips for Beginners
+### Local vs Cloud Use
 
-- Start with a hosted LLM for fast prototyping  
-- Move to self-hosting for cheaper long-term usage  
-- Prefer OpenAI-compatible servers—they make switching easy  
-- Test APIs using **curl**, **Postman**, or **Python**  
-- Cache repeated prompts to save cost  
+If the model is open source, we can **host it locally** — but this requires:
 
----
+- Enough RAM / GPU
+- Model being open source
 
-# 📚 Useful Tools for Developers
-
-| Tool | Purpose |
-|------|---------|
-| **Ollama** | Run local LLMs easily |
-| **vLLM** | Fast inference server |
-| **LM Studio** | Desktop UI for LLMs |
-| **OpenAI Python SDK** | Communicate with OpenAI-style APIs |
-| **Transformers.js** | Browser-based LLMs |
+Otherwise, we rely on **cloud-based usage**.
 
 ---
 
-# 📞 Need More?
+### Two Main Usage Approaches
 
-I can generate:
+| Mode | Method | Description |
+|------|--------|-------------|
+| **On-host** | Ollama | Run models locally if hardware supports it |
+| **On-cloud** | OpenAI, Anthropic, Ollama Cloud, etc. | Use hosted models through APIs |
 
-- a tutorial on building a chatbot  
-- a guide for fine-tuning  
-- templates for Python / JS / Go SDKs  
-- instructions for deploying your own LLM server  
+---
 
-Just ask!
+We will explore both approaches.
