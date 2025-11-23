@@ -1,37 +1,50 @@
-# Hey nice to see you 👋  
-I’m **Tharaka K**. I’m recently graduted from UOM and work as an AI engineer.
+# Hey, nice to see you! 👋
 
-This page is dedicated abouth open-source learning aon the concept of *learn coding and build AI apps from scratch, While getting deep understaning of the core theories and inner workings — so you truly *feel how it works* .
+I'm **Tharaka K**, a recent graduate from the University of Moratuwa working as an AI Engineer.
 
-All code is open-source and I walk you through everything on *my YouTube channel* 👉 [here](https://www.youtube.com/@TharakaKodithuwakku06) in **Sinhala/English**.
+This page is dedicated to open-source learning focused on *learning to code and building AI applications from scratch*. My goal is to provide deep understanding of core theories and inner workings — so you truly *feel how it works*.
 
----
-
-**Learn. Code. Build. Repeat. **  
-
-I will bring up **two parallel learning paths** 👇  
+All code is open-source, and I walk you through everything on *my YouTube channel* 👉 [Watch here](https://www.youtube.com/@TharakaKodithuwakku06) in *Sinhala/English*.
 
 ---
 
-## 1️⃣ Python for Beginners (From Scratch) — Starting soon...
+**Learn. Code. Build. Repeat.**
 
-Requirement: a **functioning brain and curiosity** 
-
-Learn Python from zero
-
-👉 [Start soon](https://baymax06in19.github.io/)
+I offer *two parallel learning paths* 👇
 
 ---
 
-## 2️⃣ Generative AI & Agentic App Development 
+## 1️⃣ Python for Beginners (From Scratch) — Starting Soon...
 
-Dive into building **AI powered aplications**, agents, workflows and real-world projects.
+**Requirements:** A functioning brain and curiosity 🧠
 
-🔗 [How to setup LLM?](https://baymax06in19.github.io/connect_llms)  
-🔗 [How to choose best LLM?](https://baymax06in19.github.io/llm_evals)
+Learn Python from zero to hero.
+
+👉 [Coming Soon](https://baymax06in19.github.io/)
 
 ---
 
-> This series is **continuosly growing**, so check back for new content, updated code and more tutorials.  
-> Each section help you **build skills from ground up**
+## 2️⃣ Generative AI & Agentic App Development
+
+Dive into building **AI-powered applications**, agents, workflows, and real-world projects.
+
+🔗 [How to Setup LLMs?](https://baymax06in19.github.io/connect_llms)  
+🔗 [How to Choose the Best LLM?](https://baymax06in19.github.io/llm_evals)
+
+---
+
+> **Note:** This series is **continuously growing**, so check back for new content, updated code, and fresh tutorials.  
+> Each section helps you **build skills from the ground up**.
+
+---
+
+### 📫 Connect With Me
+
+- YouTube: [@TharakaKodithuwakku06](https://www.youtube.com/@TharakaKodithuwakku06)
+- GitHub: [Tharaka](https://github.com/baymax06in19)
+- Whatsapp: +94 715365126
+
+---
+
+*Happy Learning! *
 
