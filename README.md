@@ -1,27 +1,37 @@
-# Hi, I’m Tharaka K.
+# Hey nice to see you 👋  
+I’m **Tharaka K**. I’m recently graduted from UOM and work as an AI engineer.
 
-Welcome! *learn coding and build AI apps from scratch*, while getting a deep understanding of the core theories and inner workings—so you truly *feel how it works*.
-All code is **free to download**, and I walk you through everything on *my YouTube channel* [here](https://www.youtube.com/@TharakaKodithuwakku06) in *Sinhala/English*.
-Learn.
-Learn. Code. Build. Repeat. 
+This page is dedicated abouth open-source learning aon the concept of *learn coding and build AI apps from scratch, While getting deep understaning of the core theories and inner workings — so you truly *feel how it works* .
 
-I will bring up **two parallel learning paths** :  
----
-## 1. Python for Beginners (From Scratch) / Start Soon ...
-Requirement: a **functioning brain with curiosity**. The rest, we’ll teach you!
-Learn Python from the ground up, with a focus on **AI-related programming**.  
-
-[Start soon](https://baymax06in19.github.io/)  
+All code is open-source and I walk you through everything on *my YouTube channel* 👉 [here](https://www.youtube.com/@TharakaKodithuwakku06) in **Sinhala/English**.
 
 ---
 
-## 2. Generative AI & Agentic Application Development  / ...
+**Learn. Code. Build. Repeat. **  
 
-Dive into building **AI-powered applications**, including generative AI agents and workflows.  
-
-[How to setup LLM?](https://baymax06in19.github.io/connect_llms)  
-[How to choose best LLM?](https://baymax06in19.github.io/llm_evals)  
+I will bring up **two parallel learning paths** 👇  
 
 ---
 
-> This series is **continuously growing**, so check back for new content, updated code, and additional tutorials. Each section is designed to help you **build your skills from ground up**.
+## 1️⃣ Python for Beginners (From Scratch) — Starting soon...
+
+Requirement: a **functioning brain and curiosity** 
+
+Learn Python from zero
+
+👉 [Start soon](https://baymax06in19.github.io/)
+
+---
+
+## 2️⃣ Generative AI & Agentic App Development 
+
+Dive into building **AI powered aplications**, agents, workflows and real-world projects.
+
+🔗 [How to setup LLM?](https://baymax06in19.github.io/connect_llms)  
+🔗 [How to choose best LLM?](https://baymax06in19.github.io/llm_evals)
+
+---
+
+> This series is **continuosly growing**, so check back for new content, updated code and more tutorials.  
+> Each section help you **build skills from ground up**
+
